@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Captura en flagrancia | Curso interactivo</title>
+<style>
+:root{--navy:#102a43;--blue:#176b87;--teal:#2a9d8f;--gold:#e9c46a;--bg:#f3f6f9;--ink:#243447;--muted:#617386;--white:#fff;--line:#d9e2ec}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Arial}
+header{background:linear-gradient(120deg,#102a43,#176b87);color:#fff;padding:30px max(22px,calc((100% - 1120px)/2))}
+header h1{margin:6px 0;font-size:clamp(1.7rem,4vw,2.5rem);line-height:1.15}header p{max-width:820px;margin:8px 0;color:#e7f1f7}
+.kicker{text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;font-weight:700;color:#b9dce8}
+.shell{max-width:1120px;margin:22px auto;padding:0 16px;display:grid;grid-template-columns:260px 1fr;gap:20px}
+nav,.panel,.module-card{background:var(--white);border:1px solid var(--line);border-radius:14px;box-shadow:0 4px 14px #102a430c}
+nav{padding:14px;height:max-content;position:sticky;top:12px}nav strong{display:block;margin:4px 8px 10px;color:var(--navy)}
+nav button{display:block;width:100%;text-align:left;border:0;background:transparent;padding:10px 12px;border-radius:9px;color:var(--ink);cursor:pointer;font:inherit}
+nav button:hover,nav button.active{background:#e7f3f7;color:#0d536d;font-weight:700}
+main{min-width:0}.panel{padding:clamp(18px,3vw,30px);margin-bottom:18px}.hidden{display:none!important}
+h2{color:var(--navy);line-height:1.2;margin-top:0}h3{color:#14536b;margin-top:25px}h4{margin-bottom:6px;color:var(--navy)}
+.lead{font-size:1.08rem;color:#40566b}.callout{border-left:4px solid var(--teal);background:#edf8f6;padding:14px 16px;border-radius:8px;margin:16px 0}
+.warning{border-left-color:#d69e2e;background:#fff8e6}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}
+.tile{border:1px solid var(--line);border-radius:12px;padding:15px;background:#fbfdff}.tile b{display:block;color:var(--navy)}
+.pill{display:inline-block;background:#e5f1f6;color:#14536b;border-radius:99px;padding:3px 10px;font-size:.8rem;font-weight:700}
+ul,ol{padding-left:23px}.question{border:1px solid var(--line);padding:15px;border-radius:12px;margin:14px 0;background:#fbfdff}
+.question label{display:block;padding:5px 0;cursor:pointer}.btn{border:0;background:var(--blue);color:white;border-radius:9px;padding:10px 16px;font-weight:700;cursor:pointer;margin:6px 6px 6px 0}.btn.secondary{background:#e7eef3;color:#173b53}.feedback{margin-top:10px;font-weight:700}.good{color:#147d64}.bad{color:#a33b32}
+.progress{height:9px;background:#e3eaf0;border-radius:99px;overflow:hidden;margin:10px 0}.progress span{display:block;height:100%;background:var(--teal);width:0}
+footer{max-width:1120px;margin:0 auto;padding:5px 18px 35px;color:var(--muted);font-size:.9rem}
+a{color:#126782}table{border-collapse:collapse;width:100%;margin:14px 0}td,th{border:1px solid var(--line);padding:9px;text-align:left}th{background:#edf3f7}
+@media(max-width:800px){.shell{grid-template-columns:1fr}nav{position:static;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:3px}nav strong{grid-column:1/-1}}
+</style>
+</head>
+<body>
+<header>
+ <div class="kicker">Curso virtual interactivo · 40 horas</div>
+ <h1>Captura en flagrancia</h1>
+ <p>Fundamentos jurídicos, garantías y comprensión académica del procedimiento policial de captura en flagrancia.</p>
+ <p><span class="pill">Programa Técnico Profesional en Servicio de Policía</span> <span class="pill">Moodle · Recurso HTML/SCORM</span></p>
+</header>
+<div class="shell">
+<nav aria-label="Navegación del curso">
+<strong>Contenido del curso</strong>
+<button class="active" data-page="inicio">Inicio y orientación</button>
+<button data-page="m1">Módulo 1 · Fundamentos</button>
+<button data-page="m2">Módulo 2 · Flagrancia</button>
+<button data-page="m3">Módulo 3 · Garantías</button>
+<button data-page="m4">Módulo 4 · Comprensión</button>
+<button data-page="m5">Módulo 5 · Documentación</button>
+<button data-page="m6">Módulo 6 · Integración</button>
+<button data-page="fuentes">Fuentes y glosario</button>
+</nav>
+<main>
+<section id="inicio" class="panel page">
+ <span class="pill">Bienvenida</span><h2>Bienvenido al curso</h2>
+ <p class="lead">Este espacio de aprendizaje está diseñado para estudiar los fundamentos jurídicos de la captura en flagrancia, reconocer sus condiciones legales y comprender la importancia de las garantías de todas las personas involucradas.</p>
+ <div class="callout"><b>Orientación académica y de seguridad jurídica.</b> Este recurso desarrolla conceptos, interpretación normativa y análisis de situaciones ficticias. No reemplaza la formación presencial, la supervisión docente ni los manuales, protocolos y órdenes institucionales vigentes. No contiene instrucciones tácticas para realizar una captura.</div>
+ <h3>Propósito de aprendizaje</h3><p>Al finalizar, el estudiante estará en capacidad de explicar los fundamentos constitucionales y legales de la captura en flagrancia, diferenciar las hipótesis legales de flagrancia, reconocer derechos y garantías, y analizar académicamente la finalidad de las actuaciones y documentos relacionados.</p>
+ <div class="grid">
+  <div class="tile"><b>Duración</b>40 horas distribuidas en seis módulos.</div>
+  <div class="tile"><b>Metodología</b>Lecturas breves, preguntas, casos ficticios, reflexión y autoevaluación.</div>
+  <div class="tile"><b>Evaluación</b>Actividades por módulo y evaluación integradora.</div>
+ </div>
+ <h3>Ruta de aprendizaje</h3><ol><li>Explora los contenidos en el orden propuesto.</li><li>Revisa las normas y fuentes enlazadas.</li><li>Responde las preguntas de autoevaluación y lee la retroalimentación.</li><li>Analiza los casos desde la legalidad, los derechos y la presunción de inocencia.</li><li>Consulta al docente cuando una situación requiera interpretación institucional o jurídica especializada.</li></ol>
+ <div class="callout warning"><b>Nota normativa:</b> las normas pueden ser modificadas. Antes de usar este material como guía institucional, el docente debe verificar la versión vigente de la legislación y los documentos oficiales aplicables.</div>
+ <h3>Evaluación sugerida</h3><table><tr><th>Evidencia</th><th>Ponderación</th></tr><tr><td>Actividades módulos 1 y 2</td><td>20 %</td></tr><tr><td>Actividades módulos 3 y 4</td><td>25 %</td></tr><tr><td>Actividad módulo 5</td><td>15 %</td></tr><tr><td>Caso integrador módulo 6</td><td>20 %</td></tr><tr><td>Evaluación final</td><td>20 %</td></tr></table>
+ <button class="btn" onclick="go('m1')">Comenzar módulo 1 →</button>
+</section>
+
+<section id="m1" class="panel page hidden">
+ <span class="pill">Módulo 1 · 6 horas</span><h2>Fundamentos jurídicos de la captura</h2>
+ <p class="lead">Objetivo: reconocer los fundamentos constitucionales y legales que regulan la libertad personal, la captura y el debido proceso.</p>
+ <h3>1.1 La libertad personal como regla</h3><p>La libertad personal es un derecho fundamental. Su restricción exige fundamento jurídico y respeto por las garantías previstas en la Constitución y la ley. En el análisis de una captura, la existencia de una sospecha o señalamiento no debe confundirse automáticamente con la acreditación de una causal legal.</p>
+ <h3>1.2 Constitución Política</h3><ul><li><b>Artículo 28:</b> protege la libertad personal y establece condiciones constitucionales para su restricción.</li><li><b>Artículo 29:</b> consagra el debido proceso y garantías aplicables a actuaciones judiciales y administrativas.</li><li><b>Artículo 32:</b> contempla la aprehensión en situación de flagrancia en los términos constitucionales.</li></ul>
+ <h3>1.3 Ley 906 de 2004</h3><p>La Ley 906 de 2004 contiene disposiciones del sistema penal acusatorio. Para este curso se estudian especialmente los artículos 301 y 302, relativos a la flagrancia y al procedimiento en caso de flagrancia. Su lectura debe realizarse en una compilación actualizada y junto con la jurisprudencia pertinente.</p>
+ <div class="callout"><b>Idea clave:</b> la legalidad de una captura no depende solamente de que exista una noticia sobre un posible delito. Debe examinarse si los hechos encajan en una hipótesis legal y si se respetaron las garantías aplicables.</div>
+ <h3>Actividad de comprensión</h3><p>Lee la afirmación: “La protección de la libertad personal exige que toda restricción tenga fundamento jurídico y respete el debido proceso”. Explica en dos o tres frases por qué es importante para el servicio de policía.</p>
+ <textarea id="m1ref" rows="3" style="width:100%;padding:10px;border:1px solid #ccd6df;border-radius:8px" placeholder="Escribe tu reflexión..."></textarea>
+ <div class="question" data-answer="b" data-explain="Correcto. La Constitución exige fundamento jurídico y respeto por las garantías."><b>Autoevaluación 1.</b><p>¿Qué principio debe orientar el análisis de una restricción de la libertad?</p><label><input type="radio" name="q1" value="a"> La conveniencia de la actuación.</label><label><input type="radio" name="q1" value="b"> La legalidad y el respeto por las garantías.</label><label><input type="radio" name="q1" value="c"> La sola existencia de un señalamiento.</label><button class="btn" onclick="check(this)">Comprobar respuesta</button><div class="feedback"></div></div>
+ <h3>Resumen</h3><ul><li>La libertad personal es un derecho fundamental.</li><li>La Constitución establece límites y garantías.</li><li>La Ley 906 regula hipótesis y aspectos del procedimiento de flagrancia.</li></ul>
+</section>
+
+<section id="m2" class="panel page hidden">
+ <span class="pill">Módulo 2 · 7 horas</span><h2>Comprensión jurídica de la flagrancia</h2>
+ <p class="lead">Objetivo: identificar y diferenciar las hipótesis legales de flagrancia previstas en el artículo 301 de la Ley 906 de 2004.</p>
+ <h3>2.1 Concepto</h3><p>La flagrancia es una situación excepcional definida por la ley, asociada a circunstancias de inmediatez entre la conducta punible y la aprehensión o individualización de la persona. No equivale a una conclusión anticipada de responsabilidad penal.</p>
+ <h3>2.2 Hipótesis legales</h3><p>El artículo 301 de la Ley 906 de 2004 contempla varias hipótesis. Para estudiarlas, identifica el elemento jurídico central de cada una:</p>
+ <ol><li>La persona es sorprendida y aprehendida durante la comisión del delito.</li><li>La persona es sorprendida o individualizada durante la comisión y aprehendida inmediatamente después por persecución o señalamiento inmediato en los términos de la norma.</li><li>La persona es sorprendida con objetos, instrumentos o huellas de los que fundadamente se desprenda que acaba de cometer un delito o participar en él.</li><li>La persona es sorprendida o individualizada mediante grabación de video en las condiciones previstas por la norma y aprehendida inmediatamente después.</li><li>La persona se encuentra en un vehículo utilizado momentos antes para huir del lugar de los hechos, con la salvedad legal relativa al conocimiento de la conducta.</li></ol>
+ <div class="callout warning"><b>Precisión normativa:</b> el parágrafo del artículo 301 fue derogado por el artículo 13 de la Ley 2477 de 2025. Consulta siempre la compilación oficial actualizada. Las hipótesis deben interpretarse con su texto vigente y la jurisprudencia aplicable.</div>
+ <h3>2.3 Diferenciar hechos, inferencias y conclusiones</h3><p>En el análisis académico conviene separar: (a) hechos observables o información recibida; (b) inferencias que requieren justificación; y (c) conclusión jurídica provisional sobre si los hechos podrían corresponder a una hipótesis legal. La decisión jurídica exige valoración competente y no debe basarse en prejuicios.</p>
+ <div class="question" data-answer="c" data-explain="Correcto. La flagrancia corresponde a hipótesis legales concretas; un señalamiento aislado no reemplaza el análisis de los requisitos legales."><b>Autoevaluación 2.</b><p>¿Cuál afirmación es más precisa?</p><label><input type="radio" name="q2" value="a"> Cualquier denuncia constituye flagrancia.</label><label><input type="radio" name="q2" value="b"> La flagrancia demuestra definitivamente la culpabilidad.</label><label><input type="radio" name="q2" value="c"> La flagrancia exige verificar los supuestos legales y sus circunstancias.</label><button class="btn" onclick="check(this)">Comprobar respuesta</button><div class="feedback"></div></div>
+ <h3>Actividad: análisis de situación ficticia</h3><p>Una persona informa que observó un hecho posiblemente delictivo y señala a alguien que se encuentra a varias cuadras. No se conoce todavía el momento exacto del hecho, la continuidad de una persecución ni otros elementos de contexto.</p><p><b>Pregunta:</b> ¿es correcto concluir automáticamente que existe flagrancia? Justifica tu respuesta con referencia a la necesidad de verificar los requisitos legales.</p>
+ <textarea rows="3" style="width:100%;padding:10px;border:1px solid #ccd6df;border-radius:8px" placeholder="Redacta tu análisis..."></textarea>
+</section>
+
+<section id="m3" class="panel page hidden">
+ <span class="pill">Módulo 3 · 7 horas</span><h2>Derechos y garantías</h2>
+ <p class="lead">Objetivo: reconocer las garantías constitucionales y legales que deben observarse en el contexto de una captura.</p>
+ <h3>3.1 Dignidad humana y trato respetuoso</h3><p>Toda persona conserva su dignidad y sus derechos. La condición de capturado no elimina la protección constitucional ni autoriza tratos crueles, degradantes o discriminatorios.</p>
+ <h3>3.2 Garantías relevantes</h3><ul><li><b>Debido proceso:</b> observancia de las formas y garantías previstas en la Constitución y la ley.</li><li><b>Presunción de inocencia:</b> la responsabilidad penal debe establecerse por las autoridades judiciales competentes.</li><li><b>Derecho de defensa:</b> posibilidad de ejercer defensa en los términos legales.</li><li><b>Información de derechos:</b> comprensión de la situación jurídica y de las garantías aplicables.</li><li><b>Habeas corpus:</b> mecanismo constitucional para proteger la libertad personal frente a privaciones ilegales o prolongaciones ilícitas.</li></ul>
+ <h3>3.3 Control de legalidad</h3><p>El control judicial de la captura permite que la autoridad competente examine su legalidad. La intervención de las autoridades debe permitir la revisión de las circunstancias relevantes y el respeto de los términos y garantías legales.</p>
+ <div class="callout"><b>Principio de análisis:</b> una actuación jurídicamente correcta debe poder explicarse a partir de hechos verificables, normas aplicables y respeto de los derechos.</div>
+ <div class="question" data-answer="a" data-explain="Correcto. La presunción de inocencia se mantiene y la responsabilidad penal corresponde establecerla a la autoridad judicial competente."><b>Autoevaluación 3.</b><p>¿Qué implica la presunción de inocencia?</p><label><input type="radio" name="q3" value="a"> Que la responsabilidad penal no se presume y debe establecerse conforme al proceso legal.</label><label><input type="radio" name="q3" value="b"> Que la captura equivale a una condena.</label><label><input type="radio" name="q3" value="c"> Que los derechos dejan de aplicarse después de la captura.</label><button class="btn" onclick="check(this)">Comprobar respuesta</button><div class="feedback"></div></div>
+ <h3>Actividad de reflexión</h3><p>En un caso ficticio, un estudiante observa que en un informe se describe a una persona como “culpable” antes de que exista decisión judicial. Identifica el problema conceptual y propone una expresión neutral que respete la presunción de inocencia.</p>
+ <textarea rows="3" style="width:100%;padding:10px;border:1px solid #ccd6df;border-radius:8px" placeholder="Escribe tu respuesta..."></textarea>
+</section>
+
+<section id="m4" class="panel page hidden">
+ <span class="pill">Módulo 4 · 8 horas</span><h2>Comprensión general del procedimiento</h2>
+ <p class="lead">Objetivo: comprender los componentes jurídicos generales relacionados con la captura en flagrancia y su articulación con las garantías.</p>
+ <h3>4.1 Lectura jurídica integral</h3><p>El estudio del procedimiento requiere relacionar la hipótesis legal de flagrancia con los hechos conocidos, las garantías constitucionales, las competencias de las autoridades y el control judicial. No debe estudiarse como una lista descontextualizada de acciones.</p>
+ <h3>4.2 Componentes que deben comprenderse</h3><div class="grid"><div class="tile"><b>Fundamento</b>Identificación de la norma y de la hipótesis jurídica relevante.</div><div class="tile"><b>Circunstancias</b>Comprensión objetiva del contexto y de la información disponible.</div><div class="tile"><b>Garantías</b>Reconocimiento de derechos y límites constitucionales.</div><div class="tile"><b>Autoridades</b>Comprensión de competencias y puesta a disposición según la ley.</div><div class="tile"><b>Control</b>Reconocimiento del control judicial de legalidad.</div></div>
+ <h3>4.3 Artículo 302 de la Ley 906 de 2004</h3><p>Esta disposición regula aspectos del procedimiento en caso de flagrancia, incluida la conducción ante las autoridades correspondientes y la presentación ante el juez de control de garantías en los términos legales. La interpretación debe hacerse directamente sobre el texto vigente y sus modificaciones.</p>
+ <div class="callout warning"><b>Alcance del recurso:</b> este módulo no ofrece una guía táctica ni sustituye protocolos institucionales. Su propósito es que el estudiante pueda explicar la estructura jurídica general y reconocer qué aspectos requieren consulta del procedimiento institucional autorizado.</div>
+ <div class="question" data-answer="b" data-explain="Correcto. El análisis integra fundamento legal, circunstancias, garantías, competencias y control de legalidad."><b>Autoevaluación 4.</b><p>¿Cuál es la mejor forma de estudiar el procedimiento?</p><label><input type="radio" name="q4" value="a"> Memorizar acciones sin considerar el contexto legal.</label><label><input type="radio" name="q4" value="b"> Relacionar fundamento normativo, circunstancias, garantías, autoridades y control.</label><label><input type="radio" name="q4" value="c"> Considerar que las garantías son opcionales.</label><button class="btn" onclick="check(this)">Comprobar respuesta</button><div class="feedback"></div></div>
+ <h3>Actividad: mapa de conceptos</h3><p>Elabora un esquema que conecte estos cinco conceptos: fundamento legal, circunstancias, derechos, autoridad competente y control de legalidad. Añade una frase que explique la relación entre cada par.</p>
+ <textarea rows="4" style="width:100%;padding:10px;border:1px solid #ccd6df;border-radius:8px" placeholder="Describe tu mapa conceptual..."></textarea>
+</section>
+
+<section id="m5" class="panel page hidden">
+ <span class="pill">Módulo 5 · 6 horas</span><h2>Actuaciones y documentación: comprensión académica</h2>
+ <p class="lead">Objetivo: reconocer la finalidad de los registros y documentos relacionados con el procedimiento, desde los principios de objetividad, claridad y trazabilidad.</p>
+ <h3>5.1 ¿Por qué es importante documentar?</h3><p>La documentación permite dejar constancia de la información relevante para la revisión de las autoridades competentes. Debe facilitar la comprensión de los hechos y distinguir lo observado directamente de lo informado por terceros y de las inferencias.</p>
+ <h3>5.2 Criterios de calidad documental</h3><ul><li><b>Claridad:</b> redacción comprensible, precisa y sin ambigüedades innecesarias.</li><li><b>Objetividad:</b> evitar juicios de valor, etiquetas o afirmaciones no sustentadas.</li><li><b>Coherencia:</b> correspondencia entre el relato, los tiempos y la información registrada.</li><li><b>Trazabilidad:</b> identificación de la fuente de la información y de los registros pertinentes conforme a las reglas institucionales.</li><li><b>Integridad:</b> respeto por los procedimientos de conservación y manejo documental vigentes.</li></ul>
+ <h3>5.3 Observación, información e inferencia</h3><table><tr><th>Tipo</th><th>Ejemplo académico</th></tr><tr><td>Observación directa</td><td>“El servidor observó un objeto sobre el mostrador”.</td></tr><tr><td>Información de tercero</td><td>“La persona entrevistada manifestó haber visto un hecho”.</td></tr><tr><td>Inferencia</td><td>“A partir de los datos descritos podría plantearse una hipótesis que debe verificarse”.</td></tr></table>
+ <div class="callout">Un documento claro no reemplaza la valoración jurídica. Su función es registrar información de manera fiel para que pueda ser examinada por las autoridades competentes.</div>
+ <div class="question" data-answer="c" data-explain="Correcto. Distinguir la fuente y naturaleza de la información evita presentar inferencias como si fueran observaciones directas."><b>Autoevaluación 5.</b><p>¿Qué práctica mejora la objetividad documental?</p><label><input type="radio" name="q5" value="a"> Incluir conclusiones personales como hechos comprobados.</label><label><input type="radio" name="q5" value="b"> Omitir la fuente de los datos.</label><label><input type="radio" name="q5" value="c"> Diferenciar lo observado, lo informado y lo inferido.</label><button class="btn" onclick="check(this)">Comprobar respuesta</button><div class="feedback"></div></div>
+ <h3>Actividad: revisión de redacción</h3><p>Revisa esta frase ficticia: “El delincuente fue visto por un vecino y quedó demostrado que cometió el delito”. Identifica dos problemas de objetividad o precisión y reescribe la frase en lenguaje neutral, sin afirmar responsabilidad penal.</p>
+ <textarea rows="4" style="width:100%;padding:10px;border:1px solid #ccd6df;border-radius:8px" placeholder="Problemas identificados y propuesta de redacción..."></textarea>
+</section>
+
+<section id="m6" class="panel page hidden">
+ <span class="pill">Módulo 6 · 6 horas</span><h2>Integración del aprendizaje</h2>
+ <p class="lead">Objetivo: integrar los conocimientos jurídicos y conceptuales mediante el análisis de una situación ficticia.</p>
+ <h3>Caso académico integrador</h3><p>En un espacio público se reporta un posible hecho delictivo. Una persona que afirma haber presenciado parte de la situación entrega información a una autoridad. Existen diferencias entre los relatos sobre el momento del hecho y la identificación de quien habría participado. No se cuenta inicialmente con todos los datos para establecer el contexto.</p>
+ <h3>Preguntas para el análisis</h3><ol><li>¿Qué información es un hecho observado y cuál proviene de terceros?</li><li>¿Qué aspectos del artículo 301 deben revisarse antes de formular una conclusión sobre flagrancia?</li><li>¿Por qué no es correcto equiparar una hipótesis de flagrancia con una declaración de culpabilidad?</li><li>¿Qué garantías constitucionales deben tenerse presentes?</li><li>¿Por qué es importante que los registros sean objetivos y permitan identificar las fuentes de información?</li></ol>
+ <textarea rows="6" style="width:100%;padding:10px;border:1px solid #ccd6df;border-radius:8px" placeholder="Redacta tu análisis integrador..."></textarea>
+ <h3>Evaluación final</h3>
+ <div class="question" data-answer="a" data-explain="Correcto. La flagrancia debe analizarse con base en los supuestos legales vigentes y los hechos verificables."><b>1.</b> La flagrancia debe analizarse a partir de:<label><input type="radio" name="q6" value="a"> Los supuestos legales y las circunstancias verificables.</label><label><input type="radio" name="q6" value="b"> La impresión subjetiva de quien observa.</label><label><input type="radio" name="q6" value="c"> Cualquier señalamiento sin análisis.</label><button class="btn" onclick="check(this)">Comprobar</button><div class="feedback"></div></div>
+ <div class="question" data-answer="b" data-explain="Correcto. La presunción de inocencia se mantiene durante el proceso."><b>2.</b> La captura significa que:<label><input type="radio" name="q7" value="a"> Existe condena penal.</label><label><input type="radio" name="q7" value="b"> Se presenta una situación jurídica que debe tramitarse con respeto de las garantías.</label><label><input type="radio" name="q7" value="c"> Desaparecen los derechos fundamentales.</label><button class="btn" onclick="check(this)">Comprobar</button><div class="feedback"></div></div>
+ <div class="question" data-answer="c" data-explain="Correcto. La documentación debe ser objetiva y diferenciar observación, información e inferencia."><b>3.</b> Un registro objetivo debe:<label><input type="radio" name="q8" value="a"> Incluir calificativos personales.</label><label><input type="radio" name="q8" value="b"> Presentar inferencias como hechos.</label><label><input type="radio" name="q8" value="c"> Distinguir fuentes y naturaleza de la información.</label><button class="btn" onclick="check(this)">Comprobar</button><div class="feedback"></div></div>
+ <div class="question" data-answer="a" data-explain="Correcto. El artículo 302 debe estudiarse en su versión vigente y junto con las normas y garantías aplicables."><b>4.</b> El artículo 302 de la Ley 906 de 2004 se relaciona con:<label><input type="radio" name="q9" value="a"> El procedimiento en caso de flagrancia.</label><label><input type="radio" name="q9" value="b"> La definición de la presunción de inocencia.</label><label><input type="radio" name="q9" value="c"> La regulación general de las contravenciones de tránsito.</label><button class="btn" onclick="check(this)">Comprobar</button><div class="feedback"></div></div>
+ <p id="score" class="callout" aria-live="polite">Responde las cuatro preguntas para revisar tu resultado.</p>
+</section>
+
+<section id="fuentes" class="panel page hidden">
+ <span class="pill">Consulta y profundización</span><h2>Fuentes normativas y glosario</h2>
+ <h3>Fuentes normativas principales</h3><ul>
+ <li><a href="https://www.cancilleria.gov.co/normograma/compilacion/docs/constitucion_politica_1991.htm" target="_blank" rel="noopener">Constitución Política de Colombia de 1991</a>. Consultar especialmente artículos 28, 29 y 32.</li>
+ <li><a href="https://www.cancilleria.gov.co/normograma/compilacion/docs/ley_0906_2004.htm" target="_blank" rel="noopener">Ley 906 de 2004 – Código de Procedimiento Penal (compilación)</a>. Consultar artículos 301 y 302 y notas de vigencia.</li>
+ <li><a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php/norma_pdf.php?i=260798" target="_blank" rel="noopener">Ley 2477 de 2025</a>. Revisar las modificaciones que inciden en la Ley 906 de 2004.</li>
+ </ul>
+ <h3>Glosario básico</h3><dl><dt><b>Flagrancia</b></dt><dd>Situación definida por las hipótesis legales del artículo 301 de la Ley 906 de 2004.</dd><dt><b>Captura</b></dt><dd>Restricción de la libertad personal sometida a requisitos constitucionales y legales.</dd><dt><b>Presunción de inocencia</b></dt><dd>Garantía según la cual la responsabilidad penal no se presume y debe establecerse conforme al debido proceso.</dd><dt><b>Control de legalidad</b></dt><dd>Revisión por autoridad judicial competente de la legalidad de la actuación, en los términos legales.</dd><dt><b>Trazabilidad</b></dt><dd>Posibilidad de identificar el origen y recorrido de la información o registro.</dd></dl>
+ <div class="callout warning"><b>Para el docente:</b> complementar este recurso con los manuales, protocolos y directrices institucionales vigentes, jurisprudencia pertinente y documentos oficiales autorizados. Verificar la vigencia normativa antes de cada cohorte.</div>
+ <p><b>Créditos:</b> recurso didáctico de apoyo. Debe ser revisado y aprobado por el responsable académico y jurídico antes de su uso institucional.</p>
+</section>
+</main></div>
+<footer><div class="progress"><span id="bar"></span></div><span id="progressText">Progreso de navegación: 0 de 8 secciones visitadas.</span><p>Recurso HTML adaptable a dispositivos. La navegación y autoevaluaciones son interactivas; las respuestas abiertas son para reflexión y deben entregarse mediante las actividades configuradas por el docente en Moodle.</p></footer>
+<script>
+const pages=[...document.querySelectorAll('.page')], nav=[...document.querySelectorAll('nav button')], visited=new Set(['inicio']);
+function go(id){pages.forEach(p=>p.classList.toggle('hidden',p.id!==id));nav.forEach(b=>b.classList.toggle('active',b.dataset.page===id));visited.add(id);updateProgress();window.scrollTo({top:0,behavior:'smooth'});}
+nav.forEach(b=>b.addEventListener('click',()=>go(b.dataset.page)));
+function updateProgress(){let n=visited.size;document.getElementById('bar').style.width=(n/8*100)+'%';document.getElementById('progressText').textContent=`Progreso de navegación: ${n} de 8 secciones visitadas.`}
+function check(btn){const box=btn.closest('.question'),ans=box.dataset.answer,selected=box.querySelector('input[type=radio]:checked'),fb=box.querySelector('.feedback');if(!selected){fb.textContent='Selecciona una respuesta antes de comprobar.';fb.className='feedback bad';return;}let ok=selected.value===ans;fb.textContent=(ok?'¡Respuesta correcta! ':'Respuesta incorrecta. ')+box.dataset.explain;fb.className='feedback '+(ok?'good':'bad');}
+</script>
+</body></html>
